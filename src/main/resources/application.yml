@@ -52,11 +52,11 @@ spring:
     gateway:
       routes:
         - id: order
-          uri: http://jjworder:8080
+          uri: http://order:8080
           predicates:
             - Path=/orders/** 
         - id: delivery
-          uri: http://jjwdelivery:8080
+          uri: http://delivery:8080
           predicates:
             - Path=/deliveries/**
         - id: mapage
